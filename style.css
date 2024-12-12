@@ -1,0 +1,279 @@
+.bar-section {
+  display: flex; /* Mengaktifkan Flexbox */
+  align-items: center; /* Vertikal rata tengah */
+  height: 38px;
+}
+.gap {
+  width: 20px;
+  height: 20px;
+}
+
+.add-img {
+  position: absolute;
+}
+.mode-btn-clicked {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #534cc2;
+  display: none;
+}
+
+.add-btn-clicked {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #534cc2;
+  display: none;
+}
+
+.add-wrap {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #6c63ff;
+  border-radius: 100%;
+}
+
+section {
+  height: 90vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  height: 85vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.empty-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.empty-wrap p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.mode-btn {
+  width: 38px;
+  height: 100%;
+  cursor: pointer;
+  background-color: #6c63ff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mode-btn-img {
+  position: absolute;
+}
+
+.category-btn {
+  width: 85px;
+  height: 100%;
+  background-color: #6c63ff;
+  border-radius: 5px;
+  border-color: #6c63ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.category-btn img {
+  width: 12px;
+  height: 6px;
+  margin-right: 10px;
+}
+
+.category-btn p {
+  font-size: 18px;
+  color: white;
+  margin-left: 10px;
+}
+
+.search-bar-wrap {
+  position: relative;
+}
+
+input {
+  background-color: #f7f7f7;
+  width: 596px;
+  height: 40px; /* Sesuaikan tinggi sesuai kebutuhan */
+  border-radius: 5px;
+  padding-left: 20px; /* Tambahkan padding untuk teks */
+  border: 2px solid #6c63ff;
+  font-size: 16px;
+}
+input::placeholder {
+  font-size: 16px;
+  color: #c3c1e5;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.search-img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute; /* Posisi absolut relatif terhadap .search-bar */
+  top: 50%; /* Posisi vertikal di tengah */
+  right: 20px; /* Jarak dari sisi kanan */
+  transform: translateY(
+    -50%
+  ); /* Menggeser agar benar-benar rata tengah vertikal */
+}
+
+.header {
+  font-size: 25px;
+}
+
+.bar-section {
+  display: flex;
+}
+
+body {
+  background-color: #f7f7f7;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding-top: 40px;
+}
+
+.kanit-thin {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.kanit-extralight {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.kanit-thin-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.kanit-extralight-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.kanit-light-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kanit-medium-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.kanit-semibold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kanit-bold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.kanit-extrabold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.kanit-black-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
