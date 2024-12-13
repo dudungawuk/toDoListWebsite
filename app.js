@@ -14,18 +14,52 @@ const modal = document.getElementById("modal");
 const apply = document.querySelector(".apply");
 const cancel = document.querySelector(".cancel");
 const task = document.querySelector(".task");
+const gapContent = document.querySelector(".gap-content");
 
-countTask = 0;
+// hapus.addEventListener("click", () => {
+//   const ElementToRemove = hapus.parentElement.
+// });
 
-if (countTask == 0) {
-  document.querySelector(".empty-wrap").style.display = "flex";
-} else {
-  document.querySelector(".empty-wrap").style.display = "none";
-}
+let countTask = 0;
 
 apply.addEventListener("click", () => {
   taskValue = task.value;
   modal.style.display = "none";
+  countTask += 1;
+  if (countTask == 0) {
+    document.querySelector(".empty-wrap").style.display = "flex";
+  } else {
+    document.querySelector(".empty-wrap").style.display = "none";
+  }
+  console.log(countTask);
+
+  const toDoHTML = `        <div class="to-do">
+          <div style="display: flex">
+            <input class="checkbox" type="checkbox" />
+            <div style="width: 10px"></div>
+            <div class="to-do-value">${taskValue}</div>
+          </div>
+          <div style="display: flex">
+            <div class="edit">Edit</div>
+            <div style="width: 10px"></div>
+            <div class="hapus">Hapus</div>
+          </div>
+        </div>`;
+
+  gapContent.insertAdjacentHTML("afterend", toDoHTML);
+
+  const hapus = document.querySelector(".hapus");
+
+  hapus.addEventListener("click", () => {
+    const toDoItem = hapus.closest(".to-do");
+    toDoItem.remove();
+    countTask -= 1;
+    if (countTask == 0) {
+      document.querySelector(".empty-wrap").style.display = "flex";
+    } else {
+      document.querySelector(".empty-wrap").style.display = "none";
+    }
+  });
 });
 
 cancel.addEventListener("click", () => {

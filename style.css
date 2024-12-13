@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 400;
 }
 .checkbox {
   width: 26px;
@@ -14,9 +15,17 @@
   border-color: #6c63ff;
   border-radius: 4px;
 }
-.to-do-value {
+input[type="checkbox"]:checked ~ .to-do-value {
   text-decoration: line-through;
+  color: #999;
 }
+.edit {
+  cursor: pointer;
+}
+.hapus {
+  cursor: pointer;
+}
+
 .bar-section {
   display: flex; /* Mengaktifkan Flexbox */
   align-items: center; /* Vertikal rata tengah */
