@@ -32,8 +32,12 @@
           </div>
           <div class="gap"></div>
           <div class="category-btn">
-            <p>ALL</p>
-            <img src="./images/dropdown.png" alt="" />
+            <div class="category-btn-clicked"></div>
+            <div class="category-wrap">
+              <p>ALL</p>
+              <div class="gap"></div>
+              <img class="dropdown" src="./images/dropdown.png" alt="" />
+            </div>
           </div>
           <div class="gap"></div>
           <div class="mode-btn">
@@ -42,15 +46,40 @@
           </div>
         </div>
         <div style="height: 63px"></div>
+        <div class="to-do">
+          <div style="display: flex">
+            <input class="checkbox" type="checkbox" />
+            <div style="width: 10px"></div>
+            <div class="to-do-value">Value</div>
+          </div>
+          <div style="display: flex">
+            <div>Edit</div>
+            <div style="width: 10px"></div>
+            <div>Hapus</div>
+          </div>
+        </div>
         <div class="empty-wrap">
           <img src="./images/Empty.png" alt="" />
           <p class="kenit-regular">Empty...</p>
         </div>
       </div>
       <div class="add-wrap">
-        <div class="add-btn">
+        <div class="add-btn" id="openModal">
           <div class="add-btn-clicked"></div>
           <img class="add-img" src="./images/add.png" alt="" />
+        </div>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <div class="header kanit-medium">NEW NOTE</div>
+          <div style="height: 20px"></div>
+          <input class="task" type="text" placeholder="Input your note..." />
+          <div style="height: 100px"></div>
+          <div class="btn-modal-wrap">
+            <div class="cancel kanit-medium">CANCEL</div>
+            <div class="apply kanit-medium">APPLY</div>
+          </div>
         </div>
       </div>
     </section>
